@@ -54,8 +54,26 @@ export NVM_DIR="$HOME/.nvm"
 export WORKON_HOME='$HOME/.virtualenvs'
 export PROJECT_HOME='$HOME/Devel'
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export GEM_HOME="$HOME/.gem"
 source /usr/local/bin/virtualenvwrapper.sh
 
 alias sql='psql -d cosmicbinturongs'
 alias vs='code .'
+alias penv='mkvirtualenv '
 alias refresh='source ~/.bashrc'
+alias pm='python3 manage.py'
+
+take() {
+    mkdir "$1" && cd "$1"
+}
+gitall() {
+   git add "." && git commit -m "$1"
+}
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
